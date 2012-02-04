@@ -1,0 +1,3 @@
+Social Docking is a Massively Parallel Virtual Screening tool that uses HTML5 web workers to discover pharmaceutically interesting compounds. This is the first virtual screening program to be implemented entirely in HTML5.
+
+Uses Google App Engine free billing to run virtual screen on the cheap. Files hosted on Dropbox CDN.

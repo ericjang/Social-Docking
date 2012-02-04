@@ -1,0 +1,26 @@
+application: socialdocking
+version: release2
+runtime: python
+api_version: 1
+
+handlers:
+- url: /static
+  static_dir: static
+
+- url: /favicon.ico
+  static_files: static/img/favicon.ico
+  upload: static/img/favicon.ico
+
+- url: /(.*\.(js))
+  static_files: js/\1
+  upload: js/(.*\.(js))
+  expiration: 5h
+  
+- url: /.*
+  script: main.py   #routes all url to main to be handled there.
+
+builtins:
+- remote_api: on
+
+inbound_services:
+- warmup

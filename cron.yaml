@@ -1,0 +1,5 @@
+cron:
+
+- description: clear up all of the non-finished jobs
+  url: /crons/cleanUnfinished/
+  schedule: every 24 hours
