@@ -1,0 +1,16 @@
+//delete me later.
+var result = {
+	"key":key,
+	"boltzmann_average_1QS4":(),//put values here
+	"boltzmann_average_1EVE":(),
+	"boltzmann_average_3IBK":()
+};
+p.ajax.post({
+	url: "/resultshandler",
+	dataType:'json',
+	data: result,
+	success: function()
+	{
+		//do nothing!
+	}
+});
